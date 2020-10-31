@@ -1,0 +1,179 @@
+/*HEADER PART */
+
+header {
+  position: fixed;
+  width: 100%;
+  high: auto;
+  top: 0%;
+  left: 0%;
+  background-color: red;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 3%;
+  high: auto;
+}
+
+.menu {
+  float: left;
+  padding-left: 70px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+/*BODY PART */
+
+body > iframe {
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body > p {
+  text-align: center;
+  font-size: 18px;
+  font-family: serif, times;
+}
+
+body {
+  text-align: center;
+  margin-top: 5%;
+  background-color: #330000;
+  color: white;
+  padding-top: 0.5%;
+}
+
+
+.image {
+  max-width: max-content;
+  height: auto;
+  width: 50%;
+  margin: auto;
+  display: block;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: serif, times;
+  margin-top: 2%;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: serif, times;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Flexboxes */
+
+#fourth {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+
+li {
+  list-style-type: none;
+  margin-top: 3%;
+}
+
+.table {
+  border: 3px solid;
+  flex: 1;
+  max-width: 18%;
+  margin: auto;
+}
+.box {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+/*FORM PART */
+
+#form {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Aside Part */
+
+.link {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* flexibility for other devices etc. 
+Overwriting CSS when condition = true*/
+
+@media all and (max-width: 900px) {
+  header {
+    width: 100%;
+  }
+  body {
+    padding-top: 20%;
+  }
+
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+
+  .image {
+  max-width: max-content;
+  height: auto;
+  width: 100%;
+  }
+  
+  .video_class {
+    width: 90%;
+    height: 10%;
+  }
+
+  #fourth {
+    display: initial;
+    text-align: center;
+    padding: 3%;
+  }
+  .table {
+    border: 3px solid;
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .box {
+    text-transform: uppercase;
+    font-weight: 30;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 30;
+  }
+}
